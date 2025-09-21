@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://berr10v6qiy3n"]
+
+[ext_resource type="Script" uid="uid://bqrcjko1rkv8r" path="res://Scripts/main_menu.gd" id="1_totuj"]
+[ext_resource type="Texture2D" uid="uid://bdqv55xxnli6a" path="res://GameArt/MenuBackGround.png" id="3_eotax"]
+[ext_resource type="PackedScene" uid="uid://4dlbwtda12ur" path="res://Scenes/Fadeinout.tscn" id="3_ur25d"]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_totuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(1395, 757)
+texture = ExtResource("3_eotax")
+
+[node name="Button_manager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Quit" type="Button" parent="Button_manager"]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+layout_mode = 0
+offset_left = 1574.0
+offset_top = 1828.0
+offset_right = 2921.0
+offset_bottom = 2298.0
+theme_override_font_sizes/font_size = 60
+
+[node name="Settings" type="Button" parent="Button_manager"]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+layout_mode = 0
+offset_left = -73.0
+offset_top = 1818.0
+offset_right = 1278.0
+offset_bottom = 2322.0
+theme_override_font_sizes/font_size = 60
+
+[node name="start" type="Button" parent="Button_manager"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+layout_mode = 0
+offset_left = -1532.0
+offset_top = 1803.0
+offset_right = -180.0
+offset_bottom = 2318.0
+theme_override_font_sizes/font_size = 60
+
+[node name="Fade_transition" parent="." instance=ExtResource("3_ur25d")]
+visible = false
+offset_left = -1875.0
+offset_top = -1114.0
+offset_right = 4587.0
+offset_bottom = 2589.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+texture_filter = 1
+position = Vector2(1388, 743)
+zoom = Vector2(0.18, 0.18)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -1240.0
+offset_top = 1992.0
+offset_right = -644.0
+offset_bottom = 2265.0
+theme_override_font_sizes/font_size = 200
+text = "START"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 175.0
+offset_top = 1974.0
+offset_right = 1096.0
+offset_bottom = 2247.0
+theme_override_font_sizes/font_size = 200
+text = "SETTINGS"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 1975.0
+offset_top = 1983.0
+offset_right = 2571.0
+offset_bottom = 2256.0
+theme_override_font_sizes/font_size = 200
+text = "QUIT"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 3479.0
+offset_top = 1983.0
+offset_right = 4166.0
+offset_bottom = 2256.0
+theme_override_font_sizes/font_size = 200
+text = "CREDIT"
+
+[connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button_manager/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]

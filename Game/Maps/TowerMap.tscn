@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bob34esjam3uh"]
+
+[ext_resource type="Script" uid="uid://8pi3oaond0pk" path="res://Game/Maps/TowerMap.gd" id="1_462li"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="2_4dbnh"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="2_462li"]
+
+[node name="TowerMap" type="Node"]
+script = ExtResource("1_462li")
+default_game_manager_scene = ExtResource("2_4dbnh")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(600, 310)
+texture = ExtResource("2_462li")

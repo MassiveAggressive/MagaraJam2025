@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqbyyhlqcwquk"]
+
+[ext_resource type="Script" uid="uid://gg3cp1hwxtcg" path="res://Game/Maps/ShuffleMap.gd" id="1_ffbdy"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_ffbdy"]
+[ext_resource type="Resource" uid="uid://fmuonsibj7y3" path="res://Core/Card/ShuffleInputCard.tres" id="3_2fkne"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="4_2fkne"]
+
+[node name="ShuffleMap" type="Node"]
+script = ExtResource("1_ffbdy")
+selected_cards = Array[ExtResource("2_ffbdy")]([ExtResource("3_2fkne")])
+default_game_manager_scene = ExtResource("4_2fkne")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"

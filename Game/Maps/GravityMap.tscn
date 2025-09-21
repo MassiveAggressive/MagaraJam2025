@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm87ht0fehe6w"]
+
+[ext_resource type="Script" uid="uid://f56kp1nthttt" path="res://Game/Maps/GravityMap.gd" id="1_e7qja"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_im1fw"]
+[ext_resource type="Resource" uid="uid://bb2g2e32pxesb" path="res://Core/Card/GravityCard.tres" id="3_qhfuv"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="4_im1fw"]
+
+[node name="GravityMap" type="Node"]
+script = ExtResource("1_e7qja")
+selected_cards = Array[ExtResource("2_im1fw")]([ExtResource("3_qhfuv")])
+default_game_manager_scene = ExtResource("4_im1fw")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"

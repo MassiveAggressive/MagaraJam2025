@@ -1,0 +1,22 @@
+[gd_scene load_steps=9 format=3 uid="uid://c3tu8xgafhps6"]
+
+[ext_resource type="Script" uid="uid://bq7okobw1ddlt" path="res://Game/GameManager/CardGameManager/CardGameManager.gd" id="1_2ys75"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_ca5r3"]
+[ext_resource type="Resource" uid="uid://benmproxmgscg" path="res://Core/Card/ReviveCard.tres" id="3_ca5r3"]
+[ext_resource type="Resource" uid="uid://bb2g2e32pxesb" path="res://Core/Card/GravityCard.tres" id="4_4hh4y"]
+[ext_resource type="Resource" uid="uid://bk3hu1ds0fsux" path="res://Core/Card/SwitchInputCard.tres" id="5_fb0vd"]
+[ext_resource type="Resource" uid="uid://fmuonsibj7y3" path="res://Core/Card/ShuffleInputCard.tres" id="6_b4by7"]
+[ext_resource type="Resource" uid="uid://ddkqihgs2fo8p" path="res://Core/Card/DeathCard.tres" id="7_fb0vd"]
+[ext_resource type="Resource" uid="uid://bt3r7ucrsrubm" path="res://Core/Card/TowerCard.tres" id="8_b4by7"]
+
+[node name="CardGameManager" type="Node"]
+script = ExtResource("1_2ys75")
+all_cards = Dictionary[String, ExtResource("2_ca5r3")]({
+"Death": ExtResource("7_fb0vd"),
+"Gravity": ExtResource("4_4hh4y"),
+"Revive": ExtResource("3_ca5r3"),
+"Shuffle": ExtResource("6_b4by7"),
+"Switch": ExtResource("5_fb0vd"),
+"Tower": ExtResource("8_b4by7")
+})
+metadata/_custom_type_script = "uid://bx4nb5r11kdpj"

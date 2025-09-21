@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://dha3p70ayya3v"]
+
+[ext_resource type="Script" uid="uid://bmel2uiogvq5k" path="res://Scripts/win_menu.gd" id="1_fwnpl"]
+[ext_resource type="Texture2D" uid="uid://cxrsui71btbiy" path="res://GameArt/Cards/Judgement.png" id="2_705q1"]
+
+[node name="win_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fwnpl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.49998, -3.99997)
+scale = Vector2(6, 3)
+texture = ExtResource("2_705q1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(13.5, -3.5)
+zoom = Vector2(1.08, 0.8)
+
+[node name="Main_Menu" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -194.0
+offset_top = -83.0
+offset_right = 206.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 60
+text = "MAIN MENU"
+
+[node name="Quit" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -190.0
+offset_top = 90.0
+offset_right = 210.0
+offset_bottom = 181.0
+theme_override_font_sizes/font_size = 60
+text = "QUIT"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -184.0
+offset_top = -390.0
+offset_right = 236.0
+offset_bottom = -280.0
+theme_override_font_sizes/font_size = 80
+text = "YOU WIN!!!"

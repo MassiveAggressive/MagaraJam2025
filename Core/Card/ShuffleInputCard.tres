@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ShuffleInputCard" load_steps=3 format=3 uid="uid://fmuonsibj7y3"]
+
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_42v6o"]
+[ext_resource type="Script" path="res://Core/Card/ShuffleInputCard.gd" id="1_x27fj"]
+
+[resource]
+script = ExtResource("1_x27fj")
+card_name = "Shuffle"
+card_texture = ExtResource("1_42v6o")

@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh5qhi5qcdpyc"]
+
+[ext_resource type="Script" uid="uid://bctuirgtvp0uy" path="res://Game/Maps/SwitchMap.gd" id="1_8h558"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_8h558"]
+[ext_resource type="Resource" uid="uid://bk3hu1ds0fsux" path="res://Core/Card/SwitchInputCard.tres" id="3_7nmvw"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="4_7nmvw"]
+
+[node name="SwitchMap" type="Node"]
+script = ExtResource("1_8h558")
+selected_cards = Array[ExtResource("2_8h558")]([ExtResource("3_7nmvw")])
+default_game_manager_scene = ExtResource("4_7nmvw")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"

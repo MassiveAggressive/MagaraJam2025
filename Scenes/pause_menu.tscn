@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvx142vvlbjey"]
+
+[ext_resource type="Texture2D" uid="uid://ccp05sdc4f7ro" path="res://GameArt/image.png" id="1_emv3i"]
+[ext_resource type="Script" uid="uid://tv8degp7fytb" path="res://Scripts/pause_menu.gd" id="1_k0w1u"]
+
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k0w1u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10.5, -5.5)
+texture = ExtResource("1_emv3i")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(13.5, -3.5)
+zoom = Vector2(0.8, 0.8)
+
+[node name="Main_Menu" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -190.0
+offset_top = -83.0
+offset_right = 210.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 60
+text = "MAIN MENU"
+
+[node name="Resume" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -190.0
+offset_top = -227.0
+offset_right = 210.0
+offset_bottom = -136.0
+theme_override_font_sizes/font_size = 60
+text = "Resume"
+
+[node name="Settings" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -190.0
+offset_top = 69.0
+offset_right = 210.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 60
+text = "SETTINGS"
+
+[node name="Quit" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+offset_left = -190.0
+offset_top = 212.0
+offset_right = 210.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 60
+text = "QUIT"

@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://dy7ry53weof53"]
+
+[ext_resource type="Script" uid="uid://dt5rbdyxa5wx3" path="res://Game/Player/Player.gd" id="1_e0wbv"]
+[ext_resource type="PackedScene" uid="uid://b1snnaunmkvxt" path="res://Game/Weapon/Weapon.tscn" id="2_2nirr"]
+[ext_resource type="SpriteFrames" uid="uid://brhu81451ckcx" path="res://Game/Player/Anims/PlayerFrames.tres" id="2_o2hno"]
+[ext_resource type="Script" uid="uid://p5s7v7rcc88o" path="res://Scripts/camera_shake.gd" id="4_2nirr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_deoc1"]
+radius = 14.0
+height = 77.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 6
+script = ExtResource("1_e0wbv")
+attack_scene = ExtResource("2_2nirr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_deoc1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_o2hno")
+animation = &"Dash"
+frame = 5
+frame_progress = 1.0
+
+[node name="camera_shake" type="Camera2D" parent="."]
+script = ExtResource("4_2nirr")
+metadata/_custom_type_script = "uid://p5s7v7rcc88o"

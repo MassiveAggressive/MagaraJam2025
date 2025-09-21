@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://8iosykrdx5tu"]
+
+[ext_resource type="Script" uid="uid://pjj437sqgugy" path="res://Managers/music_manager.gd" id="1_760hw"]
+
+[node name="music_manager" type="Node2D"]
+script = ExtResource("1_760hw")
+music_tracks = Array[AudioStream]([null])

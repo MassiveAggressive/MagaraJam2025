@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DeathCard" load_steps=3 format=3 uid="uid://ddkqihgs2fo8p"]
+
+[ext_resource type="Script" uid="uid://8wq8divxejyw" path="res://Core/Card/DeathCard.gd" id="1_0buyy"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_8olu0"]
+
+[resource]
+script = ExtResource("1_0buyy")
+card_name = "Death"
+card_texture = ExtResource("1_8olu0")
+metadata/_custom_type_script = "uid://8wq8divxejyw"

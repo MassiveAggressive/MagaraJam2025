@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ReviveCard" load_steps=3 format=3 uid="uid://benmproxmgscg"]
+
+[ext_resource type="Script" uid="uid://ckqml0klmfct0" path="res://Core/Card/ReviveCard.gd" id="1_4hr80"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_5tru0"]
+
+[resource]
+script = ExtResource("1_4hr80")
+card_name = "Revive"
+card_texture = ExtResource("1_5tru0")
+metadata/_custom_type_script = "uid://ckqml0klmfct0"

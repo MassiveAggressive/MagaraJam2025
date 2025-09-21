@@ -1,0 +1,22 @@
+[gd_scene load_steps=8 format=3 uid="uid://b16vm3l573rxc"]
+
+[ext_resource type="Script" uid="uid://cydnkbcfybjyp" path="res://Core/GameManagementSystem/GameManager/GameManagerSingle.gd" id="1_l2hhb"]
+[ext_resource type="PackedScene" uid="uid://tva0qh2k0n8h" path="res://Game/Maps/DeathMap.tscn" id="2_xb133"]
+[ext_resource type="PackedScene" uid="uid://bob34esjam3uh" path="res://Game/Maps/TowerMap.tscn" id="3_wki1b"]
+[ext_resource type="PackedScene" uid="uid://b5kp36qt7ob6s" path="res://Game/Maps/ReviveMap.tscn" id="4_7mtlc"]
+[ext_resource type="PackedScene" uid="uid://bqbyyhlqcwquk" path="res://Game/Maps/SuffleMap.tscn" id="5_fk33q"]
+[ext_resource type="PackedScene" uid="uid://bh5qhi5qcdpyc" path="res://Game/Maps/SwitchMap.tscn" id="6_cfvxs"]
+[ext_resource type="PackedScene" uid="uid://cm87ht0fehe6w" path="res://Game/Maps/GravityMap.tscn" id="7_q7061"]
+
+[node name="GameManagerSingle" type="Node"]
+script = ExtResource("1_l2hhb")
+level_queue = Array[String](["Death", "Gravity", "Revive", "Shuffle", "Switch", "Tower"])
+levels = Dictionary[String, PackedScene]({
+"Death": ExtResource("2_xb133"),
+"Gravity": ExtResource("7_q7061"),
+"Revive": ExtResource("4_7mtlc"),
+"Shuffle": ExtResource("5_fk33q"),
+"Switch": ExtResource("6_cfvxs"),
+"Tower": ExtResource("3_wki1b")
+})
+metadata/_custom_type_script = "uid://cydnkbcfybjyp"

@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://tva0qh2k0n8h"]
+
+[ext_resource type="Script" uid="uid://criodlnchjsjg" path="res://Game/Maps/DeathMap.gd" id="1_lp06g"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_6f0u2"]
+[ext_resource type="Resource" uid="uid://ddkqihgs2fo8p" path="res://Core/Card/DeathCard.tres" id="3_tysdn"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="4_6f0u2"]
+
+[node name="DeathMap" type="Node"]
+script = ExtResource("1_lp06g")
+selected_cards = Array[ExtResource("2_6f0u2")]([ExtResource("3_tysdn")])
+default_game_manager_scene = ExtResource("4_6f0u2")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"

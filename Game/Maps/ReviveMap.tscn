@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5kp36qt7ob6s"]
+
+[ext_resource type="Script" uid="uid://bj55lt16r480l" path="res://Game/Maps/ReviveMap.gd" id="1_ckmim"]
+[ext_resource type="Script" uid="uid://c5seh04cgifir" path="res://Core/Card/CardBase.gd" id="2_ckmim"]
+[ext_resource type="Resource" uid="uid://benmproxmgscg" path="res://Core/Card/ReviveCard.tres" id="3_posft"]
+[ext_resource type="PackedScene" uid="uid://bc2ggdg8sk0em" path="res://Game/GameManager/InGameGameManager/InGameGameManager.tscn" id="4_posft"]
+
+[node name="ReviveMap" type="Node"]
+script = ExtResource("1_ckmim")
+selected_cards = Array[ExtResource("2_ckmim")]([ExtResource("3_posft")])
+default_game_manager_scene = ExtResource("4_posft")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"

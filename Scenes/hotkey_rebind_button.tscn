@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqjhrqisn0ksb"]
+
+[ext_resource type="Script" uid="uid://cwevjysi3g3pb" path="res://Scripts/hotkey_rebind_button.gd" id="1_o7aab"]
+[ext_resource type="Texture2D" uid="uid://eaje18glvm73" path="res://GameArt/buton2.png" id="2_wevq8"]
+
+[node name="Hotkey_Rebind_Button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o7aab")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(450, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "ACTION"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 100
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+toggle_mode = true
+text = "ACTION_KEY"
+flat = true
+icon_alignment = 1
+
+[node name="Buton2" type="Sprite2D" parent="HBoxContainer"]
+z_index = -1
+position = Vector2(723, 37.5)
+scale = Vector2(2.50307, 1.66197)
+texture = ExtResource("2_wevq8")

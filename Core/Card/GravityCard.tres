@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="GravityCard" load_steps=3 format=3 uid="uid://bb2g2e32pxesb"]
+
+[ext_resource type="Script" path="res://Core/Card/GravityCard.gd" id="1_c08ox"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_q7ekq"]
+
+[resource]
+script = ExtResource("1_c08ox")
+card_name = "Gravity"
+card_texture = ExtResource("1_q7ekq")

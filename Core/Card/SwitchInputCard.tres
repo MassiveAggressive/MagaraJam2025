@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SwitchInputCard" load_steps=3 format=3 uid="uid://bk3hu1ds0fsux"]
+
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_kw1r8"]
+[ext_resource type="Script" path="res://Core/Card/SwitchInputCard.gd" id="1_ydela"]
+
+[resource]
+script = ExtResource("1_ydela")
+card_name = "Switch"
+card_texture = ExtResource("1_kw1r8")

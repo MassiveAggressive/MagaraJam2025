@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2d5awuwyk40s"]
+
+[ext_resource type="Script" uid="uid://bpyslint1ag48" path="res://Core/Inventory/UI/CardUI.gd" id="1_8477p"]
+
+[node name="CardUI" type="ColorRect"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+script = ExtResource("1_8477p")
+card_name = "LOVERS"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TowerCard" load_steps=3 format=3 uid="uid://bt3r7ucrsrubm"]
+
+[ext_resource type="Script" uid="uid://dwa3q1l25adt6" path="res://Core/Card/TowerCard.gd" id="1_lqsmh"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="1_wlh5a"]
+
+[resource]
+script = ExtResource("1_lqsmh")
+card_name = "Tower"
+card_texture = ExtResource("1_wlh5a")
+metadata/_custom_type_script = "uid://dwa3q1l25adt6"

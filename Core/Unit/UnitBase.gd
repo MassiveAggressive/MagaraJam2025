@@ -1,0 +1,1 @@
+class_name UnitBase extends CharacterBody2D

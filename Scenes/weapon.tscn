@@ -1,0 +1,93 @@
+[gd_scene load_steps=14 format=3 uid="uid://cctre4n2fh7w"]
+
+[ext_resource type="Texture2D" uid="uid://dq6gp4xncan3t" path="res://GameArt/twins_base_attack.png" id="1_er6cq"]
+[ext_resource type="Script" uid="uid://b0nusdn0h8feb" path="res://Scripts/Weapon.gd" id="1_qv81b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qv81b"]
+size = Vector2(349, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1ly8"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(0, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l036s"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(142, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7imee"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(284, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mql6x"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(426, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ufyc"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(568, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq8hb"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(710, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdh2e"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(852, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxn8f"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(994, 0, 142, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ho11"]
+atlas = ExtResource("1_er6cq")
+region = Rect2(1136, 0, 142, 77)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1bhi5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1ly8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l036s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7imee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mql6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ufyc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hq8hb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdh2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxn8f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ho11")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 9.0
+}]
+
+[node name="Weapon" type="Area2D"]
+script = ExtResource("1_qv81b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(394, 5)
+shape = SubResource("RectangleShape2D_qv81b")
+
+[node name="AttackSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(313, 29)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_1bhi5")
+animation = &"Attack"
+frame = 8
+frame_progress = 1.0

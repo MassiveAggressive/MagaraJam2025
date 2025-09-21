@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjurvwswq8sf5"]
+
+[ext_resource type="Script" uid="uid://bx6voplf3c27v" path="res://Core/Map/MapBase.gd" id="1_3ln6g"]
+[ext_resource type="PackedScene" uid="uid://c3tu8xgafhps6" path="res://Game/GameManager/CardGameManager/CardGameManager.tscn" id="2_1rgh8"]
+
+[node name="CardSelectionMap" type="Node"]
+script = ExtResource("1_3ln6g")
+default_game_manager_scene = ExtResource("2_1rgh8")
+metadata/_custom_type_script = "uid://bx6voplf3c27v"
